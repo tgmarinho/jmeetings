@@ -39,6 +39,7 @@ grails.scaffolding.templates.domainSuffix = 'Instance'
 grails.json.legacy.builder=false
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
+
 // whether to install the java.util.logging bridge for sl4j. Disable fo AppEngine!
 grails.logging.jul.usebridge = true
 // packages to include in Spring bean scanning
@@ -82,6 +83,16 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
-
-
-     
+// Trabalhando com plugin Mail, utilizando o servico do gmail
+grails {
+   mail {
+     host = "smtp.gmail.com"
+     port = 465
+     username = "seuLoginNoGmail@gmail.com"
+     password = "SuaSenhaGmail"
+     props = ["mail.smtp.auth":"true",
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+   }
+}
