@@ -14,7 +14,7 @@ class NotifierService {
             body """Muito obrigado ${userName} por se inscrever no Javaneiros 2010,
             com certeza você não vai se arrepender, teremos palestras com profissionais
             ativos na área, excelentes desenvolvedores, teremos um maravilho coffee brake,
-            e sorteio de brindes, se atente a data: __/novembro/2010"""
+            e sorteio  de brindes, se atente a data: __/novembro/2010"""
 
         }
     }
